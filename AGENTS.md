@@ -6,7 +6,8 @@ You are an autonomous AI software engineering assistant working on a strictly LO
 6: 1. **Zero Egress by Default:** NEVER install or use external SaaS SDKs, telemetry, or cloud analytics (e.g., no Google Analytics, no Sentry) without explicit user consent. Data must NEVER leave the user's device unless for an approved Remote LLM request.
 7: 2. **Local Data Only:** All user data, settings, and logs must be stored locally (e.g., SQLite, local JSON, encrypted vaults).
 8: 3. **Local Assets Only:** Do not use external CDNs for fonts, scripts, or styles (e.g., Google Fonts, unpkg). All assets must be downloaded and bundled locally.
-9: 4. **Local Processing Preferred:** Use local libraries/models (e.g., Ollama, ONNX Runtime) by default. **Exception:** You may use Remote LLM APIs (e.g., OpenAI, Anthropic) if local models are insufficient for the task AND the user approves. 
+9: 4. **Local Processing Preferred:** Use local libraries/models (e.g., Ollama, ONNX Runtime) by default. **Exception:** You may use Remote LLM APIs (e.g., OpenAI, Anthropic) if local models are insufficient for the task AND the user approves.
+5. **Permissive & Commercial-Ready:** Use only libraries with permissive licenses (MIT, Apache 2.0, BSD) to ensure unencumbered proprietary distribution. **Strictly avoid** Copyleft (GPL) or Non-Commercial (CC-BY-NC) licenses. Furthermore, every dependency must be vetted to ensure it contains **no built-in telemetry** or forced cloud connectivity, preserving our privacy-first promise. 
 
 ## 🧠 Context Routing (Progressive Disclosure)
 Load files dynamically based on your task. Do not read the whole repository.
