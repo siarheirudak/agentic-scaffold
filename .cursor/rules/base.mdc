@@ -1,0 +1,8 @@
+---
+description: Base rule for Cursor to follow global context
+globs:
+---
+
+# Base Rule
+
+Always reference [AGENTS.md](../../AGENTS.md) for the project context, commands, and architecture map.
