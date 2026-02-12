@@ -3,10 +3,10 @@
 You are an autonomous AI software engineering assistant working on a strictly LOCAL, PRIVACY-FIRST application.
 
 ## 🛑 Global Privacy & Security Directives (CRITICAL)
-1. **Zero Egress by Default:** NEVER install or use external SaaS SDKs, telemetry, or cloud analytics (e.g., no Google Analytics, no Sentry, no remote APIs). Data must NEVER leave the user's device without explicit consent.
-2. **Local Data Only:** All user data, settings, and logs must be stored locally (e.g., SQLite, local JSON, encrypted vaults).
-3. **Local Assets Only:** Do not use external CDNs for fonts, scripts, or styles (e.g., Google Fonts, unpkg). All assets must be downloaded and bundled locally.
-4. **Local Processing:** If AI or complex processing is needed, prefer local libraries/models (e.g., Ollama, ONNX Runtime, local LLMs). 
+6: 1. **Zero Egress by Default:** NEVER install or use external SaaS SDKs, telemetry, or cloud analytics (e.g., no Google Analytics, no Sentry) without explicit user consent. Data must NEVER leave the user's device unless for an approved Remote LLM request.
+7: 2. **Local Data Only:** All user data, settings, and logs must be stored locally (e.g., SQLite, local JSON, encrypted vaults).
+8: 3. **Local Assets Only:** Do not use external CDNs for fonts, scripts, or styles (e.g., Google Fonts, unpkg). All assets must be downloaded and bundled locally.
+9: 4. **Local Processing Preferred:** Use local libraries/models (e.g., Ollama, ONNX Runtime) by default. **Exception:** You may use Remote LLM APIs (e.g., OpenAI, Anthropic) if local models are insufficient for the task AND the user approves. 
 
 ## 🧠 Context Routing (Progressive Disclosure)
 Load files dynamically based on your task. Do not read the whole repository.
